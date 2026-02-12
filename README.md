@@ -8,32 +8,32 @@ A portfolio SQL project that models an IT support ticketing system and provides 
 - Relational modeling (FKs + data quality rules)
 
 ## Project Structure
-- 'sql/00_schema.sql' – schemas + core tables
-- 'sql/01_seed_data.sql' – seed dataset (10 users, 4 technicians, 16 tickets)
-- 'sql/02_constraints.sql' – data-quality constraints
-- 'sql/03_views.sql' – reporting views ('it_reports.*')
-- 'sql/04_materialized_views.sql' – materialized views + indexes
-- 'sql/05_refresh_functions.sql' – refresh functions for MVs
-- 'sql/06_roles_readonly.sql' – read-only reporting role/user
+- `sql/00_schema.sql` – schemas + core tables
+- `sql/01_seed_data.sql` – seed dataset (10 users, 4 technicians, 16 tickets)
+- `sql/02_constraints.sql` – data-quality constraints
+- `sql/03_views.sql` – reporting views (`it_reports.*`)
+- `sql/04_materialized_views.sql` – materialized views + indexes
+- `sql/05_refresh_functions.sql` – refresh functions for MVs
+- `sql/06_roles_readonly.sql` – read-only reporting role/user
 
 ## Data Model
-Core schema: 'it_tickets'
+Core schema: `it_tickets`
 - users, technicians, categories, assets, sla, tickets
 
-Reporting schema: 'it_reports'
-- reporting views ('v_*')
-- materialized views ('mv_*')
+Reporting schema: `it_reports`
+- reporting views (`v_*`)
+- materialized views (`mv_*`)
 
 ## Quick Start (run order)
-1. Run 'sql/00_schema.sql'
-2. Run 'sql/01_seed_data.sql'
-3. Run 'sql/02_constraints.sql'
-4. Run 'sql/03_views.sql'
-5. Run 'sql/04_materialized_views.sql'
+1. Run `sql/00_schema.sql`
+2. Run `sql/01_seed_data.sql`
+3. Run `sql/02_constraints.sql`
+4. Run `sql/03_views.sql`
+5. Run `sql/04_materialized_views.sql`
 6. Run `sql/05_refresh_functions.sql`
 
 ### Refresh materialized views
-'''sql
+```sql
 SELECT it_reports.refresh_core_mviews();
 -- or
 SELECT it_reports.refresh_all_mviews();
