@@ -30,7 +30,7 @@ Reporting schema: 'it_reports'
 3. Run 'sql/02_constraints.sql'
 4. Run 'sql/03_views.sql'
 5. Run 'sql/04_materialized_views.sql'
-6. Run 'sql/05_refresh_functions.sql'
+6. Run `sql/05_refresh_functions.sql`
 
 ### Refresh materialized views
 '''sql
