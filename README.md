@@ -24,14 +24,6 @@ Reporting schema: `it_reports`
 - reporting views (`v_*`)
 - materialized views (`mv_*`)
 
-## Quick Start (run order)
-1. Run `sql/00_schema.sql`
-2. Run `sql/01_seed_data.sql`
-3. Run `sql/02_constraints.sql`
-4. Run `sql/03_views.sql`
-5. Run `sql/04_materialized_views.sql`
-6. Run `sql/05_refresh_functions.sql`
-
 ### Screenshots
 ![Dashboard Summary](sql/docs/images/dashboard_summary.png)
 ![SLA by Priority](sql/docs/images/sla_by_priority.png)
