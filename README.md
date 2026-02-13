@@ -37,3 +37,7 @@ Reporting schema: `it_reports`
 SELECT it_reports.refresh_core_mviews();
 -- or
 SELECT it_reports.refresh_all_mviews();
+### Screenshots
+![Dashboard Summary](sql/docs/images/dashboard_summary.png)
+![SLA by Priority](sql/docs/images/sla_by_priority.png)
+![Technician Scorecard](sql/docs/images/technician_scorecard.png)
