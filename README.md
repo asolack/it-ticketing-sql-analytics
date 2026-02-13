@@ -32,13 +32,13 @@ Reporting schema: `it_reports`
 5. Run `sql/04_materialized_views.sql`
 6. Run `sql/05_refresh_functions.sql`
 
+### Screenshots
+![Dashboard Summary](sql/docs/images/dashboard_summary.png)
+![SLA by Priority](sql/docs/images/sla_by_priority.png)
+![Technician Scorecard](sql/docs/images/technician_scorecard.png)
+
 ### Refresh materialized views
 ```sql
 SELECT it_reports.refresh_core_mviews();
 -- or
 SELECT it_reports.refresh_all_mviews();
-
-### Screenshots
-![Dashboard Summary](sql/docs/images/dashboard_summary.png)
-![SLA by Priority](sql/docs/images/sla_by_priority.png)
-![Technician Scorecard](sql/docs/images/technician_scorecard.png)
